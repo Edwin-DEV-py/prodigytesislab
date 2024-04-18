@@ -1,26 +1,35 @@
 {% load static %}
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
+<nav class="navbar navbar-expand-sm bg-body-tertiary fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Logotipo</a>
 
-        <h1>Logotipo</h1>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <!--Boton par ael menu responsive-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse mx-auto">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="">Cotizar</a>
-                </li>
-            </ul>
-        </div>
+        <!--Sidebar-->
+        <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header border-bottom">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logotipo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
 
+            <!--Lista de menus-->
+            <div class="offcanvas-body d-flex flex-column p-3">
+                <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link {% if current_url == '/home/' %}active{% endif %}" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link {% if current_url == '/nosotros/' %}active{% endif %}" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link {% if current_url == '/cotizar/' %}active{% endif %}" href="#cotizar">Cotizar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </nav>
