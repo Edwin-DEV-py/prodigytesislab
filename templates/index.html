@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/sectionReveal.css' %}">
     {% block head %}
     <title>ProdigyTesisLab</title>
     {% endblock %}
@@ -16,11 +17,11 @@
     {% block content %}
     <br>
     <section>
-        <div class="row frase">
-            <div class="col-md-4 align-self-center">
+        <div class="row frase d-flex justify-content-center">
+            <div class="col-md-4 align-self-center text-center">
                 <img src="{% static 'img/ejemplo.jpg' %}" alt="" width="300">
             </div>
-            <div class="col-md-8 align-self-center">
+            <div class="col-md-8 align-self-center text-center">
                 <p>
                     Nunca consideres el estudio como 
                         una obligación, sino como una oportunidad 
@@ -30,24 +31,112 @@
         </div>
     </section>
     <br>
-    <section id="seccionNumeros">
+
+    <!--Seccion donde estan los datos numericos de la empresa-->
+    <section id="seccionNumeros" class="seccionNumeros reveal">
         <div class="row divsInformacion">
-            <div class="col-md-3 align-self-center text-center">
+            <div class="col-md-12 align-self-center text-center">
                 <h2>Experiencia</h2>
             </div>
-            <div class="col-md-9 align-self-center text-center">
-                <div class="row d-flex">
+            <div class="col-md-12 align-self-center text-center">
+                <div class="row d-flex justify-content-center">
                     <div class="col-4 contenedorInformacion flex-column">
-                        <h3>5000+</h3>
+                        <span class="num" data-val="200">000</span>
                         <p>Tesis de Grado Desarrolladas</p>
                     </div>
                     <div class="col-4 contenedorInformacion flex-column">
-                        <h3>1000+</h3>
+                        <span class="num" data-val="10">0000</span>
                         <p>Años ayudando a estudiantes y profesionales</p>
                     </div>
                     <div class="col-4 contenedorInformacion flex-column">
-                        <h3>30+</h3>
+                        <span class="num" data-val="30">00</span>
                         <p>Especialistas trabajando con nosotros</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion donde se encuentran algunas imagenes de los enfoques de la empresa-->
+    <section id="seccionEnfoques" class="seccionEnfoques reveal2">
+        <div class="row divsInformacionContenedor">
+            <div class="col-md-12 contenedorSubtitulo align-self-center text-center">
+                <h2 class="subTitulos">Enfoques</h2>
+            </div>
+            <div class="col-md-12 align-self-center text-center">
+                <div class="row d-flex justify-content-center">
+                    <div class="card col-2 contenedorImagen flex-column">
+                        <img src="{% static 'img/ejemplo.jpg' %}" alt="" class="imagenAlta card-img">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">PREGRADO</h5>
+                        </div>
+                    </div>
+                    <div class="col-4 contenedorImagen flex-column">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="{% static 'img/ejemplo.jpg' %}" alt="" class="imagenGrilla card-img">
+                            </div>
+                            <div class="col-6">
+                                <img src="{% static 'img/ejemplo.jpg' %}" alt="" class="imagenGrilla card-img">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="{% static 'img/ejemplo.jpg' %}" alt="" class="imagenGrilla card-img">
+                            </div>
+                            <div class="col-6">
+                                <img src="{% static 'img/ejemplo.jpg' %}" alt="" class="imagenGrilla card-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 contenedorImagen flex-column">
+                        <img src="{% static 'img/ejemplo.jpg' %}" alt="" class="imagenAlta card-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion de noticias sobre nosotros-->
+    <section id="seccionNoticias" class="seccionNoticias reveal3">
+        <div class="row divsInformacionNoticias">
+            <div class="col-md-12 contenedorSubtitulo align-self-center text-center">
+                <h2 class="subTitulos">Noticias de Nosotros</h2>
+            </div>
+            <div class="col-md-12 align-self-center text-center">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-8 contenedorNoticia flex-column">
+                    </div>
+                    <div class="col-4 contenedorNoticia flex-column">
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="{% static 'img/ejemplo.jpg' %}" alt="" class="card-img" width="200">
+                            </div>
+                            <div class="col-9">
+                                <div class="row">May 7, 2023</div>
+                                <div class="row">
+                                    Nuestras tesis han sido reconocidas y premiadas
+                                </div>
+                                <div class="row">
+                                    Learn insider tips for getting the best deals and making the most of your rental car experience.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h3>Hola</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h3>Hola</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h3>Hola</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -56,6 +145,6 @@
     {% endblock %}
 
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
-
+    <script src="{% static 'js/index.js' %}"></script>
 </body>
 </html>

@@ -5,5 +5,9 @@ import os
 def homeView(request):
     
     current_url = request.path
-    print(current_url)
     return render(request, 'index.html', {'current_url': current_url})
+
+def aboutWeView(request):
+    
+    current_url = request.path
+    return render(request, 'aboutWe.html', {'current_url': current_url})
