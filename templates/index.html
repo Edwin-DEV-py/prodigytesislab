@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/header.css' %}">
     <link rel="stylesheet" href="{% static 'css/sectionReveal.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
     {% block head %}
     <title>ProdigyTesisLab</title>
     {% endblock %}
@@ -60,12 +61,12 @@
     <!--Seccion donde se encuentran algunas imagenes de los enfoques de la empresa-->
     <section id="seccionEnfoques" class="seccionEnfoques reveal2">
         <div class="row divsInformacionContenedor">
-            <div class="col-md-12 contenedorSubtitulo align-self-center text-center">
+            <div class="col-12 contenedorSubtitulo align-self-center text-center">
                 <h2 class="subTitulos">Enfoques</h2>
             </div>
-            <div class="col-md-12 align-self-center text-center">
+            <div class="col-12 align-self-center text-center">
                 <div class="row d-flex justify-content-center">
-                    <div class="card col-2 contenedorImagen flex-column">
+                    <div class="card col-md-2 contenedorImagen flex-column">
                         <img src="{% static 'img/ejemplo.jpg' %}" alt="" class="imagenAlta card-img">
                         <div class="card-img-overlay">
                             <h5 class="card-title">PREGRADO</h5>
@@ -105,12 +106,13 @@
             </div>
             <div class="col-md-12 align-self-center text-center">
                 <div class="row d-flex justify-content-center">
-                    <div class="col-8 contenedorNoticia flex-column">
+                    <div class="col-md-8 contenedorNoticia flex-column">
+                        <iframe class="tamanoVideo" src="https://www.youtube.com/embed/_PJvpq8uOZM?list=RDMMLl2rA7IpeNI" title="BAD BUNNY - MONACO (Official Video) | nadie sabe lo que va a pasar mañana" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
-                    <div class="col-4 contenedorNoticia flex-column">
+                    <div class="col-md-4 contenedorNoticia flex-column">
                         <div class="row">
                             <div class="col-3">
-                                <img src="{% static 'img/ejemplo.jpg' %}" alt="" class="card-img" width="200">
+                                <img src="{% static 'img/ejemplo.jpg' %}" alt="" class="card-img">
                             </div>
                             <div class="col-9">
                                 <div class="row">May 7, 2023</div>
@@ -123,18 +125,45 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12">
-                                <h3>Hola</h3>
+                            <div class="col-3">
+                                <img src="{% static 'img/ejemplo.jpg' %}" alt="" class="card-img">
+                            </div>
+                            <div class="col-9">
+                                <div class="row">May 7, 2023</div>
+                                <div class="row">
+                                    Nuestras tesis han sido reconocidas y premiadas
+                                </div>
+                                <div class="row">
+                                    Learn insider tips for getting the best deals and making the most of your rental car experience.
+                                </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12">
-                                <h3>Hola</h3>
+                            <div class="col-3">
+                                <img src="{% static 'img/ejemplo.jpg' %}" alt="" class="card-img">
+                            </div>
+                            <div class="col-9">
+                                <div class="row">May 7, 2023</div>
+                                <div class="row">
+                                    Nuestras tesis han sido reconocidas y premiadas
+                                </div>
+                                <div class="row">
+                                    Learn insider tips for getting the best deals and making the most of your rental car experience.
+                                </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12">
-                                <h3>Hola</h3>
+                            <div class="col-3">
+                                <img src="{% static 'img/ejemplo.jpg' %}" alt="" class="card-img">
+                            </div>
+                            <div class="col-9">
+                                <div class="row">May 7, 2023</div>
+                                <div class="row">
+                                    Nuestras tesis han sido reconocidas y premiadas
+                                </div>
+                                <div class="row">
+                                    Learn insider tips for getting the best deals and making the most of your rental car experience.
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -147,10 +176,10 @@
     <section id="seccionFormularios" class="seccionFormularios">
         <div class="row divsFormularioContacto d-flex justify-content-center">
             <div class="row divRowFormMiddle">
-                <div class="col-4 bg-dark">
+                <div class="col-md-4 bg-dark">
                     <p>hola</p>
                 </div>
-                <div class="col-8 divFormGroup">
+                <div class="col-md-8 divFormGroup">
                     <h4>Estas a un paso de nosotros....</h4>
                     <br>
                     <form method="post" class="row g-3">
@@ -176,7 +205,7 @@
                             {{ form.Mensaje }}
                         </div>
                         <div class="col-12">
-                            <button type="submit" class="btn btn-light">Contactar</button>
+                            <button type="submit" class="btn btn-light btnContactar">Contactar</button>
                         </div>
                     </form>
                 </div>
@@ -185,9 +214,9 @@
     </section>
 
     <br>
-    
-    <!--Seccion del footer-->
     {% endblock %}
+    <!--Seccion del footer-->
+    {% include 'components/footer.html' %}
 
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <script src="{% static 'js/index.js' %}"></script>
