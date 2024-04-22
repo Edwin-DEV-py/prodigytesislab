@@ -131,3 +131,25 @@
 .reveal3{
     position: relative;
 }
+
+/*Todo el diseno de la seccion del formulario de contacto*/
+
+.seccionFormularios{
+    margin-top: 20%;
+}
+
+.divsFormularioContacto{
+    padding-top: 100px;
+    max-width: 100%;
+    max-height: 800px;
+}
+
+.divRowFormMiddle{
+    max-width: 80%;
+}
+
+.divFormGroup{
+    padding: 5%;
+    background: #333333;
+    color: white;
+}

@@ -144,11 +144,49 @@
     </section>
 
     <!--Seccion del formulario-->
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
+    <section id="seccionFormularios" class="seccionFormularios">
+        <div class="row divsFormularioContacto d-flex justify-content-center">
+            <div class="row divRowFormMiddle">
+                <div class="col-4 bg-dark">
+                    <p>hola</p>
+                </div>
+                <div class="col-8 divFormGroup">
+                    <h4>Estas a un paso de nosotros....</h4>
+                    <br>
+                    <form method="post" class="row g-3">
+                        {% csrf_token %}
+                        <div class="col-md-6">
+                            <label class="form-label">Nombre</label>
+                            {{ form.Nombre }}
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Apellido</label>
+                            {{ form.Apellido }}
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Telefono</label>
+                            {{ form.Telefono }}
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Correo</label>
+                            {{ form.Correo }}
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label">Mensaje</label>
+                            {{ form.Mensaje }}
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-light">Contactar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    
+    <!--Seccion del footer-->
     {% endblock %}
 
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
