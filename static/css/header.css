@@ -31,3 +31,9 @@ body{
 .logo{
     max-width: 100px;
 }
+
+/*scrollbar*/
+
+html{
+    scrollbar-color: #334563 #132644;
+}
