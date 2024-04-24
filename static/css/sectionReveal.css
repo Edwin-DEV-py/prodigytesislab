@@ -188,11 +188,10 @@
 /*Todo el diseno de la seccion del formulario de contacto*/
 
 .seccionFormularios{
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 .divsFormularioContacto{
-    padding-top: 100px;
     max-width: 100%;
     max-height: 800px;
 }
@@ -212,4 +211,18 @@
     border-bottom-left-radius: 0px;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+.imagenFormulario{
+    position: relative;
+    bottom: 30px;
+    left: 30px;
+}
+
+@media screen and (max-width: 900px) {
+    .imagenFormulario {
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+    }
 }

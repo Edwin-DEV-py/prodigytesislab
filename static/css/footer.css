@@ -8,3 +8,8 @@
 .listaNavegacion{
     list-style: none;
 }
+
+.listaNavegacion a{
+    text-decoration: none;
+    color: white;
+}
