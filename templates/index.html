@@ -20,14 +20,19 @@
     <section>
         <div class="row frase d-flex justify-content-center">
             <div class="col-md-4 align-self-center text-center">
-                <img src="{% static 'img/ejemplo.jpg' %}" alt="" width="300">
+                <img src="{% static 'img/warren.webp' %}" alt="" class="imgWarren">
             </div>
             <div class="col-md-8 align-self-center text-center">
-                <p>
-                    Nunca consideres el estudio como 
-                        una obligación, sino como una oportunidad 
-                        para penetrar en el bello y maravilloso mundo  del saber.
-                </p>
+                <h4>
+                    <b>
+                        "La clave del éxito es trabajar inteligentemente, no más tiempo."
+                    </b>
+                </h4>
+                <h4>
+                    <b>
+                        Warren Buffett
+                    </b>
+                </h4>
             </div>
         </div>
     </section>
@@ -37,21 +42,21 @@
     <section id="seccionNumeros" class="seccionNumeros reveal">
         <div class="row divsInformacion">
             <div class="col-md-12 align-self-center text-center">
-                <h2>Experiencia</h2>
+                <h2><b>EXPERIENCIA</b></h2>
             </div>
             <div class="col-md-12 align-self-center text-center">
                 <div class="row d-flex justify-content-center">
                     <div class="col-4 contenedorInformacion flex-column">
-                        <span class="num" data-val="200">000</span>
-                        <p>Tesis de Grado Desarrolladas</p>
+                        <span class="num" data-val="1500">0000</span>
+                        <p>Proyectos Realizados</p>
                     </div>
                     <div class="col-4 contenedorInformacion flex-column">
-                        <span class="num" data-val="10">0000</span>
-                        <p>Años ayudando a estudiantes y profesionales</p>
+                        <span class="num" data-val="4">0</span>
+                        <p>Años en el mercado</p>
                     </div>
                     <div class="col-4 contenedorInformacion flex-column">
-                        <span class="num" data-val="30">00</span>
-                        <p>Especialistas trabajando con nosotros</p>
+                        <span class="num" data-val="3400">0000</span>
+                        <p>Estudiantes Graduados</p>
                     </div>
                 </div>
             </div>
@@ -65,39 +70,54 @@
                 <h2 class="subTitulos">Enfoques</h2>
             </div>
             <div class="col-12 align-self-center text-center">
-                <div class="row d-flex justify-content-center">
-                    <div class="card col-md-2 contenedorImagen flex-column">
-                        <img src="{% static 'img/ejemplo.jpg' %}" alt="" class="imagenAlta card-img">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">PREGRADO</h5>
+                <div class="row d-flex justify-content-center align-items-stretch">
+                    <div class="card col-md-3 contenedorImagen flex-column">
+                        <div class="imagen-con-titulo" style="background-image: url('/static/img/pregrado.png')">
+                            <h4 class="card-title tituloImagen">PREGRADO</h4>
                         </div>
                     </div>
-                    <div class="col-4 contenedorImagen flex-column">
+                    <div class="col-md-6 contenedorImagen flex-column contenedorImagenesVarias">
                         <div class="row">
-                            <div class="col-6">
-                                <img src="{% static 'img/ejemplo.jpg' %}" alt="" class="imagenGrilla card-img">
+                            <div class="card col-md-6 contenedorImagen flex-column">
+                                <img src="{% static 'img/espe.png' %}" alt="" class="imagenes2">
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title tituloImagen">ESPECIALIZACIÓN</h4>
+                                </div>
                             </div>
-                            <div class="col-6">
-                                <img src="{% static 'img/ejemplo.jpg' %}" alt="" class="imagenGrilla card-img">
+                            <div class="card col-md-6 contenedorImagen flex-column">
+                                <img src="{% static 'img/ase.png' %}" alt="" class="imagenes2">
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title tituloImagen">ASESORÍAS</h4>
+                                </div>
                             </div>
                         </div>
+                        <br>
                         <div class="row">
-                            <div class="col-6">
-                                <img src="{% static 'img/ejemplo.jpg' %}" alt="" class="imagenGrilla card-img">
+                            <div class="card col-md-6 contenedorImagen flex-column">
+                                <img src="{% static 'img/maestria.png' %}" alt="" class="imagenes2">
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title tituloImagen">MAESTRÍA</h4>
+                                </div>
                             </div>
-                            <div class="col-6">
-                                <img src="{% static 'img/ejemplo.jpg' %}" alt="" class="imagenGrilla card-img">
+                            <div class="card col-md-6 contenedorImagen flex-column">
+                                <img src="{% static 'img/cien.png' %}" alt="" class="imagenes2">
+                                <div class="card-img-overlay">
+                                    <p class="card-title tituloImagen">ARTÍCULOS CIENTÍFICOS
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-2 contenedorImagen flex-column">
-                        <img src="{% static 'img/ejemplo.jpg' %}" alt="" class="imagenAlta card-img">
+                    <div class="card col-md-3 contenedorImagen flex-column">
+                        <div class="imagen-con-titulo" style="background-image: url('/static/img/doctorado.png')">
+                            <h4 class="card-title tituloImagen">DOCTORADO</h4>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <br>
     <!--Seccion de noticias sobre nosotros-->
     <section id="seccionNoticias" class="seccionNoticias reveal3">
         <div class="row divsInformacionNoticias">
@@ -106,63 +126,60 @@
             </div>
             <div class="col-md-12 align-self-center text-center">
                 <div class="row d-flex justify-content-center">
-                    <div class="col-md-8 contenedorNoticia flex-column">
+                    <div class="col-md-8 contenedorNoticia flex-column text-left">
                         <iframe class="tamanoVideo" src="https://www.youtube.com/embed/_PJvpq8uOZM?list=RDMMLl2rA7IpeNI" title="BAD BUNNY - MONACO (Official Video) | nadie sabe lo que va a pasar mañana" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="textoIzquierda">
+                            <span class="colorSpan">Febrero 4, 2024</span>
+                            <h5><b>Somos de las pocas empresas constituidas legalmente para prestar nuestros servicios</b></h5>
+                            <p>Si buscas una empresa legal para tus tesis de grado PRODIGY es la solución.</p>
+                        </div>
                     </div>
                     <div class="col-md-4 contenedorNoticia flex-column">
                         <div class="row">
-                            <div class="col-3">
-                                <img src="{% static 'img/ejemplo.jpg' %}" alt="" class="card-img">
-                            </div>
-                            <div class="col-9">
-                                <div class="row">May 7, 2023</div>
-                                <div class="row">
-                                    Nuestras tesis han sido reconocidas y premiadas
-                                </div>
-                                <div class="row">
-                                    Learn insider tips for getting the best deals and making the most of your rental car experience.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-3">
-                                <img src="{% static 'img/ejemplo.jpg' %}" alt="" class="card-img">
-                            </div>
-                            <div class="col-9">
-                                <div class="row">May 7, 2023</div>
-                                <div class="row">
-                                    Nuestras tesis han sido reconocidas y premiadas
-                                </div>
-                                <div class="row">
-                                    Learn insider tips for getting the best deals and making the most of your rental car experience.
+                            <div class="card mb-3 tamanoCarta" >
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="{% static 'img/trofeo.png' %}" class="img-fluid rounded-start" alt="">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body centrarIzquierda">
+                                            <h6 class="card-text">Mayo 7, 2024</h6>
+                                            <p class="card-title">Profesionalismo, garantías y contratos: los pilares de nuestros servicios.</p>
+                                            <p class="card-text"><small class="text-body-secondary">En PRODIGY nos caracterizamos por ofrecer ofecionalismo y garantias a todos nuestros clientes.</small></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-3">
-                                <img src="{% static 'img/ejemplo.jpg' %}" alt="" class="card-img">
-                            </div>
-                            <div class="col-9">
-                                <div class="row">May 7, 2023</div>
-                                <div class="row">
-                                    Nuestras tesis han sido reconocidas y premiadas
-                                </div>
-                                <div class="row">
-                                    Learn insider tips for getting the best deals and making the most of your rental car experience.
+                            <div class="card mb-3 tamanoCarta" >
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="{% static 'img/reloj.png' %}" class="img-fluid rounded-start" alt="">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body centrarIzquierda">
+                                            <h6 class="card-text">Abril 25, 2024</h6>
+                                            <p class="card-title">Tesis completas en menos de 3 semanas: nuestro compromiso es ofrecerte calidad y eficiencia</p>
+                                            <p class="card-text"><small class="text-body-secondary">La mejor calidad en los menores tiempos posibles</small></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-3">
-                                <img src="{% static 'img/ejemplo.jpg' %}" alt="" class="card-img">
-                            </div>
-                            <div class="col-9">
-                                <div class="row">May 7, 2023</div>
-                                <div class="row">
-                                    Nuestras tesis han sido reconocidas y premiadas
-                                </div>
-                                <div class="row">
-                                    Learn insider tips for getting the best deals and making the most of your rental car experience.
+                            <div class="card mb-3 tamanoCarta" >
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="{% static 'img/bien.png' %}" class="img-fluid rounded-start" alt="">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body centrarIzquierda">
+                                            <h6 class="card-text">Enero 2, 2024</h6>
+                                            <p class="card-title">En Progidy, la excelencia abarca todas las áreas del conocimiento</p>
+                                            <p class="card-text"><small class="text-body-secondary">La excelencia es una parte fundamental de nuestra empresa y no aspiramos a menos.</small></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -176,8 +193,7 @@
     <section id="seccionFormularios" class="seccionFormularios">
         <div class="row divsFormularioContacto d-flex justify-content-center">
             <div class="row divRowFormMiddle">
-                <div class="col-md-4 bg-dark">
-                    <p>hola</p>
+                <div class="col-md-4" style="background-image: url('/static/img/fondoContatco.png')">
                 </div>
                 <div class="col-md-8 divFormGroup">
                     <h4>Estas a un paso de nosotros....</h4>

@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body{
     margin: 0;
     padding: 0;
     scrollbar-width: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 #carouselExampleIndicators{
@@ -14,7 +17,6 @@ body{
 
 .frase{
     padding: 20px;
-    background: #F4F4F4;
     max-width: 100%;
 }
 
@@ -24,4 +26,8 @@ body{
 
 .num{
     font-size: 40px;
+}
+
+.logo{
+    max-width: 100px;
 }

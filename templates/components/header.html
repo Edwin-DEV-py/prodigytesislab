@@ -1,8 +1,9 @@
 {% load static %}
 
 <nav class="navbar navbar-expand-sm bg-body-tertiary fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">Logotipo</a>
+        <a class="navbar-brand" href="/home">
+            <img src="{% static 'img/Color.png' %}" alt="" class="logo">
+        </a>
 
         <!--Boton par ael menu responsive-->
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -12,7 +13,7 @@
         <!--Sidebar-->
         <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header border-bottom">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logotipo</h5>
+                <img src="{% static 'img/Color.png' %}" alt="" class="logo">
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
 
@@ -31,5 +32,4 @@
                 </ul>
             </div>
         </div>
-    </div>
 </nav>

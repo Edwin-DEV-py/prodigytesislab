@@ -1,3 +1,10 @@
+/*Seccion de frase*/
+
+.imgWarren{
+    max-width: 300px;
+    border-radius: 5px;
+}
+
 
 /*Todo el diseno de la seccion de datos*/
 .reveal{
@@ -15,7 +22,7 @@
 }
 
 .divsInformacion{
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
     max-width: 100%;
     height: 400px;
@@ -36,6 +43,7 @@
 .seccionNumeros{
     margin-top: 50px;
     margin-bottom: 50px;
+    background: #F4F4F4;
 }
 
 /*Todo el diseno dela seccion de enfoques con imagenes*/
@@ -83,14 +91,11 @@
 
 .seccionEnfoques{
     margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 .divsInformacionContenedor{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 10px;
     max-width: 100%;
-    height: 400px;
 }
 
 .contenedorImagen{
@@ -105,25 +110,46 @@
     text-decoration-color: red;
 }
 
-.imagenAlta{
-    height: 300px;
-    width: 100%;
+.imagenes2{
+    width: 70%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.imagenGrilla{
-    width: 100%;
+.card{
+    border: 0px !important;
 }
+
+.tituloImagen {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.imagen-con-titulo {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
 
 /*Todo el diseno de la seccion de noticias sobre nosotros*/
 
 .seccionNoticias{
-    margin-top: 20%;
+    margin-top: 5%;
 }
 
 .divsInformacionNoticias{
-    padding-top: 100px;
+    padding-top: 50px;
     max-width: 100%;
-    max-height: 600px;
 }
 
 .reveal3{
@@ -133,6 +159,30 @@
 .tamanoVideo{
     width: 95%;
     height: 500px;
+}
+
+.tamanoCarta{
+    height: 150px !important;
+}
+
+.tamanoCarta img{
+    width: 70%;
+    height: 150px !important;
+}
+
+.textoIzquierda{
+    text-align: left !important;
+    padding-left: 25px;
+}
+
+
+.colorSpan{
+    color: red;
+    font-weight: bold;
+}
+
+.centrarIzquierda{
+    text-align: left !important;
 }
 
 /*Todo el diseno de la seccion del formulario de contacto*/
