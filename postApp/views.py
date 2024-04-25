@@ -31,6 +31,7 @@ def homeView(request):
             mail = 'Mensaje del usuario'
             body = render_to_string('emails/emailTemplate.html',{
                 'user':name,
+                'email':email,
                 'domain':page,
             })
             
