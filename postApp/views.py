@@ -25,10 +25,9 @@ def homeView(request):
             name = form.cleaned_data['Nombre']
             email = form.cleaned_data['Correo']
             
-            email_host = 'monoconchudo18@gmail.com'
             #arreglarrrr
             page = get_current_site(request)
-            mail = 'Mensaje del usuario'
+            mail = 'Confirmación de contacto - PRODIGY'
             body = render_to_string('emails/emailTemplate.html',{
                 'user':name,
                 'email':email,
@@ -36,8 +35,9 @@ def homeView(request):
             })
             
             send_mail = EmailMessage(
-                mail,body,settings.EMAIL_HOST_USER,to=[email_host]
+                mail,body,settings.EMAIL_HOST_USER,to=[email]
             )
+            send_mail.content_subtype = 'html'
             send_mail.from_email = False
             send_mail.send()
             

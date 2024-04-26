@@ -2,7 +2,7 @@
 .footerClass{
     padding: 30px;
     color: white;
-    background: #151530;
+    background: #132644;
 }
 
 .listaNavegacion{
@@ -11,5 +11,12 @@
 
 .listaNavegacion a{
     text-decoration: none;
+    color: white;
+}
+
+.btnRed{
+    border-radius: 50%;
+    border: none;
+    background: #E93740;
     color: white;
 }

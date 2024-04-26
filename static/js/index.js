@@ -77,3 +77,16 @@ function reveal2(){
     }
 }
 //#endregion
+
+//#region botones
+const facebookButton = document.querySelector('.facebook');
+const instagramButton = document.querySelector('.instagram');
+
+facebookButton.addEventListener('click', function() {
+    window.open('https://www.facebook.com/profile.php?id=61558154528855', '_blank');
+});
+
+instagramButton.addEventListener('click', function() {
+    window.open('https://www.instagram.com/prodigytesislab/', '_blank');
+});
+//#endregion
