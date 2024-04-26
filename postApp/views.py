@@ -25,6 +25,8 @@ def homeView(request):
             name = form.cleaned_data['Nombre']
             email = form.cleaned_data['Correo']
             
+            urlImagen = request.build_absolute_uri('/static/img/logoB.png')
+            
             #arreglarrrr
             page = get_current_site(request)
             mail = 'Confirmación de contacto - PRODIGY'
@@ -32,6 +34,7 @@ def homeView(request):
                 'user':name,
                 'email':email,
                 'domain':page,
+                'url':urlImagen
             })
             
             send_mail = EmailMessage(

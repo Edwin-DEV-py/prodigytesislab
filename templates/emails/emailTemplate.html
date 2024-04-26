@@ -4,27 +4,68 @@
     <meta charset="UTF-8">
     <title>Confirmación de contacto - PRODIGY</title>
     <style>
+        .padre {
+            margin: 0;
+            padding: 50px;
+            background: #d3d3d3; 
+        }
+
+        .container {
+            margin: 50px auto;
+            width: 70%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
         .logo {
-            position: absolute;
-            top: 20px;
-            right: 20px;
             width: 100px;
             height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .titulo {
+            text-align: center;
+        }
+
+        p{
+            font-size: 18px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
         }
     </style>
 </head>
 <body>
-    <h3>Estimado/a {{ user }},</h3>
+    <div class="padre">
+        <div class="container">
+
+            <h1 class="titulo">PRODIGYTESISLAB</h1>
     
-    <p>¡Gracias por ponerte en contacto con PRODIGY! Es un placer para nosotros recibir tu solicitud y estamos emocionados de colaborar contigo en la realización de tu tesis de grado.</p>
+            <h3>Estimado/a {{ user }},</h3>
+        
+            <p>¡Gracias por ponerte en contacto con PRODIGY! Es un placer para nosotros recibir tu solicitud y estamos emocionados de colaborar contigo en la realización de tu tesis de grado.</p>
+            
+            <p>Queremos asegurarnos de entender completamente tus necesidades y expectativas. Nuestro equipo se pondrá en contacto contigo lo antes posible para discutir más a fondo los detalles de tu proyecto y proporcionarte toda la información que necesitas para comenzar.</p>
+            
+            <p>Mientras tanto, si tienes alguna pregunta o necesitas información adicional, no dudes en responder a este correo electrónico o contactarnos directamente a través de nuestros canales de comunicación.</p>
     
-    <p>Queremos asegurarnos de entender completamente tus necesidades y expectativas. Nuestro equipo se pondrá en contacto contigo lo antes posible para discutir más a fondo los detalles de tu proyecto y proporcionarte toda la información que necesitas para comenzar.</p>
-    
-    <p>Mientras tanto, si tienes alguna pregunta o necesitas información adicional, no dudes en responder a este correo electrónico o contactarnos directamente a través de nuestros canales de comunicación.</p>
-    
-    <p>¡Estamos ansiosos por trabajar contigo y ayudarte a alcanzar tus metas académicas!</p>
-    
-    <p>Saludos cordiales,</p>
-    <p>GERENTE PRODIGY</p>
+            <p>¡Estamos ansiosos por trabajar contigo y ayudarte a alcanzar tus metas académicas!</p>
+            
+            <div>
+                <div class="flex-container">
+                    <p>Saludos cordiales, </p>
+                    <p>GERENTE PRODIGY</p>
+                </div>
+                <div>
+                    <p>DONDE IRA LA IMAGEN</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
