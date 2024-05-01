@@ -1,7 +1,7 @@
 {% load static %}
 
 <nav class="navbar navbar-expand-sm bg-body-tertiary fixed-top">
-        <a class="navbar-brand" href="/home" style="padding-left: 20px;">
+        <a class="navbar-brand" href="/home" style="padding-left: 5%;">
             <img src="{% static 'img/Color.png' %}" alt="" class="logo">
         </a>
 
@@ -19,7 +19,7 @@
 
             <!--Lista de menus-->
             <div class="offcanvas-body d-flex flex-column p-3">
-                <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                <ul class="navbar-nav d-flex justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
                     <li class="nav-item mx-2">
                         <a class="nav-link {% if current_url == '/home/' %}active{% endif %}" aria-current="page" href="/home">Inicio</a>
                     </li>

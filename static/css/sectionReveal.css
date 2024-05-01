@@ -137,8 +137,31 @@
     background-size: cover;
     background-position: center;
     border-radius: 10px;
+    height: 100%;
+    overflow: hidden;
 }
 
+.imagen-con-titulo2 {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.masAlto{
+    height: 600px;
+}
+
+.masBajo{
+    height: 280px;
+}
+
+.masBajo div{
+    height: 280px;
+}
 
 /*Todo el diseno de la seccion de noticias sobre nosotros*/
 
@@ -219,10 +242,75 @@
     left: 30px;
 }
 
+.collapseDiv{
+    display: none;
+}
+
 @media screen and (max-width: 900px) {
     .imagenFormulario {
         position: relative;
         bottom: 0px;
         left: 0px;
     }
+
+    .seccionFormularios{
+        margin-bottom: 30%;
+    }
+
+    .tituloImagen {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .masAlto{
+        height: 400px;
+    }
+    
+    .masBajo{
+        height: 180px;
+    }
+    
+    .masBajo div{
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .tituloImagen {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .masAlto{
+        display: none;
+    }
+
+    .masBajo{
+        height: 180px;
+        margin: 10px;
+    }
+    
+    .masBajo div{
+        height: 180px;
+    }
+
+    .collapseDiv{
+        display:block;
+        visibility: visible;
+    }
+    
 }
