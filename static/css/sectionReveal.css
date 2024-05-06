@@ -181,6 +181,7 @@
 .tamanoVideo{
     width: 95%;
     height: 500px;
+    border-radius: 10px;
 }
 
 .tamanoCarta{
@@ -313,4 +314,12 @@
         visibility: visible;
     }
     
+    .tamanoVideo{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contenedorNoticia2{
+        display: none;
+    }
 }
