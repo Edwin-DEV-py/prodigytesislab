@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmación de contacto - PRODIGY</title>
+    <style>
+        .padre {
+            margin: 0;
+            padding: 50px;
+            background: #d3d3d3; 
+        }
+
+        .container {
+            margin: 50px auto;
+            width: 70%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .titulo {
+            text-align: center;
+        }
+
+        p{
+            font-size: 18px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="padre">
+        <div class="container">
+
+            <h1 class="titulo">PRODIGYTESISLAB</h1>
+    
+            <h3>Correo de: {{ email }},</h3>
+        
+            <p>{{ name }} {{ Apellido }} esta interesado en nuestros productos!</p>
+            
+            <p>Telefono: {{ Telefono }}</p>
+            <p>Mensaje: {{ Mensaje }}</p>
+        </div>
+    </div>
+</body>
+</html>

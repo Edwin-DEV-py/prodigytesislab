@@ -24,6 +24,9 @@ def homeView(request):
             
             name = form.cleaned_data['Nombre']
             email = form.cleaned_data['Correo']
+            Apellido = form.cleaned_data['Apellido']
+            Telefono = form.cleaned_data['Telefono']
+            Mensaje = form.cleaned_data['Mensaje']
             
             urlImagen = request.build_absolute_uri('/static/img/logoB.png')
             
@@ -43,6 +46,25 @@ def homeView(request):
             send_mail.content_subtype = 'html'
             send_mail.from_email = False
             send_mail.send()
+            
+            #correo de la empresa
+            emailEmpresa = 'administracion@prodigytesislab.com'
+            mail2 = f'Correo de {name} {Apellido}'
+            body = render_to_string('emails/emailTemplate2.html',{
+                'user':name,
+                'email':email,
+                'Apellido':Apellido,
+                'Telefono':Telefono,
+                'Mensaje':Mensaje,
+                'domain':page,
+            })
+            
+            send_mail2 = EmailMessage(
+                mail2,body,settings.EMAIL_HOST_USER,to=[emailEmpresa]
+            )
+            send_mail2.content_subtype = 'html'
+            send_mail2.from_email = False
+            send_mail2.send()
             
             
             form = SendEmailForm()
