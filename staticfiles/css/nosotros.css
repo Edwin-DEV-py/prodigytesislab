@@ -1,0 +1,81 @@
+
+.divsQuienes{
+    max-width: 100%;
+    min-height: 400px;
+    padding: 20px;
+}
+
+.seccionQuienes{
+    color: white;
+    background: #132644;
+}
+
+.parrafoNosotros{
+    font-size: 25px;
+}
+
+/*mision*/
+
+.seccionMision{
+    color: #132644;
+}
+
+.divsMision{
+    max-width: 100%;
+    min-height: 400px;
+    padding: 20px;
+}
+
+/*vision*/
+
+.seccionVision{
+    color: white;
+    background: #132644;
+    text-align: right;
+}
+
+.divsVision{
+    max-width: 100%;
+    min-height: 400px;
+    padding: 20px;
+}
+
+/*valores*/
+
+.seccionValores{
+    color: #132644;
+}
+
+.divsValores{
+    max-width: 100%;
+    min-height: 400px;
+    padding: 20px;
+}
+
+.listaNavegacion2{
+    font-size: 30px;
+    font-weight: bold;
+    color: #132644;
+}
+
+.listaNavegacion2 li{
+    margin: 15px;
+}
+
+.contenedorV{
+    display: flex;
+}
+
+@media screen and (max-width: 700px){
+    .contenedorV{
+        display: block;
+    }
+
+    .contenedorV div img{
+        width: 100px;
+    }
+
+    .contenedorV div h4{
+        font-size: 20px;
+    }
+}

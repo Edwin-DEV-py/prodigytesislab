@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+#carouselExampleIndicators{
+    margin-top: 100px;
+}
+
+#carouselExampleIndicators img{
+    width: 70%;
+}
+
+.frase{
+    padding: 20px;
+    max-width: 100%;
+}
+
+.nav-link.active{
+    border-bottom: 2px solid red;
+}
+
+.num{
+    font-size: 40px;
+}
+
+.logo{
+    max-width: 100px;
+}
+
+/*scrollbar*/
+
+html{
+    scrollbar-color: #334563 #132644;
+}

@@ -1,0 +1,328 @@
+/*Seccion de frase*/
+
+.imgWarren{
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+
+/*Todo el diseno de la seccion de datos*/
+.reveal{
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s ease;
+}
+
+.reveal.activate{
+    transform: translateY(0px);
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.divsInformacion{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    max-width: 100%;
+    height: 400px;
+}
+
+.contenedorInformacion{
+    background: black;
+    color: white;
+    margin: 5px;
+    width: 30%;
+    border-radius: 10px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.seccionNumeros{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: #F4F4F4;
+}
+
+/*Todo el diseno dela seccion de enfoques con imagenes*/
+
+.reveal2 .contenedorImagen {
+    position: relative;
+    transform: translateX(-100%);
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s ease;
+}
+
+.reveal2 .contenedorSubtitulo {
+    position: relative;
+    transform: translateX(-100%);
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s ease;
+}
+
+.reveal2.activate .contenedorSubtitulo:nth-child(1){
+    transform: translateX(0px);
+    opacity: 1;
+    filter: blur(0px);
+    transition-delay: 0.1s;
+}
+.reveal2.activate .contenedorImagen:nth-child(1){
+    transform: translateX(0px);
+    opacity: 1;
+    filter: blur(0px);
+    transition-delay: 0.2s;
+}
+.reveal2.activate .contenedorImagen:nth-child(2){
+    transform: translateX(0px);
+    opacity: 1;
+    filter: blur(0px);
+    transition-delay: 0.3s;
+}
+.reveal2.activate .contenedorImagen:nth-child(3){
+    transform: translateX(0px);
+    opacity: 1;
+    filter: blur(0px);
+    transition-delay: 0.5s;
+}
+
+.seccionEnfoques{
+    margin-top: 50px;
+}
+
+.divsInformacionContenedor{
+    padding: 10px;
+    max-width: 100%;
+}
+
+.contenedorImagen{
+    color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.subTitulos{
+    font-weight: bold;
+}
+
+.imagenes2{
+    width: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card{
+    border: 0px !important;
+}
+
+.tituloImagen {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight:bold;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,1);
+    background: rgba(0,0,0,0.3);
+}
+
+.imagen-con-titulo {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.imagen-con-titulo2 {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.masAlto{
+    height: 600px;
+}
+
+.masBajo{
+    height: 280px;
+}
+
+.masBajo div{
+    height: 280px;
+}
+
+/*Todo el diseno de la seccion de noticias sobre nosotros*/
+
+.seccionNoticias{
+    margin-top: 5%;
+}
+
+.divsInformacionNoticias{
+    padding-top: 50px;
+    max-width: 100%;
+}
+
+.reveal3{
+    position: relative;
+}
+
+.tamanoVideo{
+    width: 95%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.tamanoCarta{
+    height: 150px !important;
+}
+
+.tamanoCarta img{
+    width: 70%;
+    height: 150px !important;
+}
+
+.textoIzquierda{
+    text-align: left !important;
+    padding-left: 25px;
+}
+
+
+.colorSpan{
+    color: red;
+    font-weight: bold;
+}
+
+.centrarIzquierda{
+    text-align: left !important;
+}
+
+/*Todo el diseno de la seccion del formulario de contacto*/
+
+.seccionFormularios{
+    margin-top: 10%;
+}
+
+.divsFormularioContacto{
+    max-width: 100%;
+    max-height: 800px;
+}
+
+.divRowFormMiddle{
+    max-width: 80%;
+}
+
+.divFormGroup{
+    padding: 5%;
+    background: #000000;
+    color: white;
+}
+
+.btnContactar{
+    border-top-right-radius: 0px !important;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.imagenFormulario{
+    background: #132644;
+    position: relative;
+    bottom: 30px;
+    left: 30px;
+}
+
+.collapseDiv{
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .imagenFormulario {
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    .seccionFormularios{
+        margin-bottom: 30%;
+    }
+
+    .tituloImagen {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .masAlto{
+        height: 400px;
+    }
+    
+    .masBajo{
+        height: 180px;
+    }
+    
+    .masBajo div{
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .tituloImagen {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .masAlto{
+        display: none;
+    }
+
+    .masBajo{
+        height: 180px;
+        margin: 10px;
+    }
+    
+    .masBajo div{
+        height: 180px;
+    }
+
+    .collapseDiv{
+        display:block;
+        visibility: visible;
+    }
+    
+    .tamanoVideo{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contenedorNoticia2{
+        display: none;
+    }
+}
