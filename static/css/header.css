@@ -37,3 +37,7 @@ body{
 html{
     scrollbar-color: #334563 #132644;
 }
+
+.logoHeader{
+    padding-left: 5%;
+}

@@ -318,11 +318,24 @@
     }
     
     .tamanoVideo{
-        width: 100%;
+        width: 80%;
+        max-height: 300px;
         margin-bottom: 10px;
     }
 
     .contenedorNoticia2{
         display: none;
+    }
+
+    .imgWarren{
+        max-width: 150px;
+    }
+
+    .carousel-inner img{
+        height: 300px;
+    }
+
+    .seccionFormularios{
+        margin-bottom: 40%;
     }
 }

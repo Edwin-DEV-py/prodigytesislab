@@ -80,3 +80,6 @@ def aboutWeView(request):
     
     current_url = request.path
     return render(request, 'aboutWe.html', {'current_url': current_url})
+
+def error_404(request, exception):
+    return render(request, '404.html', status=404)
