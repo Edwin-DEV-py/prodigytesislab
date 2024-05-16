@@ -1,9 +1,5 @@
 /*Seccion de frase*/
 
-body{
-    overflow-x: hidden !important;
-}
-
 .imgWarren{
     max-width: 300px;
     border-radius: 5px;
@@ -262,7 +258,7 @@ body{
     }
 
     .seccionFormularios{
-        margin-bottom: 40%;
+        margin-bottom: 30%;
     }
 
     .tituloImagen {
@@ -322,7 +318,8 @@ body{
     }
     
     .tamanoVideo{
-        width: 100%;
+        width: 80%;
+        max-height: 250px;
         margin-bottom: 10px;
     }
 
@@ -331,6 +328,23 @@ body{
     }
 
     .imgWarren{
-        width: 10px !important;
+        width: 150px;
+    }
+
+    .carousel-inner img{
+        height: 240px;
+    }
+
+    .seccionFormularios{
+        margin-bottom: 40%;
+    }
+
+    .contenedorInformacion span{
+        font-size: 25px;
+    }
+
+    .contenedorInformacion p{
+        font-size: 18px !important;
+        text-align: center;
     }
 }
